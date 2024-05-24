@@ -1,0 +1,126 @@
+// -*- mode: jsonc; -*-
+{
+    // --- GENERAL ---
+    "layer": "top",
+    "position": "top",
+
+
+    // --- LEFT MODULES ---
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+
+    "hyprland/workspaces": {
+        "sort-by-name": true,
+        "format": "{id}",
+        "show-special": true,
+        "persistent_workspaces": {
+            "*": 10
+        }
+     },
+
+
+    // --- CENTER MODULES ---
+    "modules-center": ["clock"],
+
+    "clock": {
+        "interval": 1,
+        "format": " {:%H:%M %d %b}"
+    },
+
+
+    // --- RIGHT MODULES ---
+    "modules-right": ["network", "cpu", "temperature","backlight", "battery", "tray", "custom/dunst", "custom/lock", "custom/power"],
+
+    "network": {
+        "format-wifi": "{signalStrength}% ",
+        "tooltip-format-wifi": "{ifname}: {ipaddr}/{cidr}\n{essid} on {frequency}GHz",
+        "format-ethernet": "{ipaddr} ",
+        "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "on-click": "nm-connection-editor"
+    },
+
+    "pulseaudio": { // TODO: replace with wireplumber
+        "format":                 "{volume}% {icon} {format_source}",
+        "format-bluetooth":       "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted":           " {format_source}",
+        "format-source":          "{volume}% ",
+        "format-source-muted":    "",
+        "format-icons": {
+            "headphone":  "",
+            "hands-free": "",
+            "headset":    "",
+            "phone":      "",
+            "portable":   "",
+            "car":        "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "cpu": {
+        "interval": 10,
+        "format": "{usage}% ",
+        "on-click": "kitty htop"
+    },
+
+    "memory": {
+        "interval": 10,
+        "format": "{}% ",
+        "on-click": "kitty htop"
+    },
+
+    "temperature": {
+        "interval": 30,
+        "critical-threshold": 80,
+        "format": "{temperatureC}°C ",
+        "on-click": "kitty htop"
+    },
+
+    "backlight": {
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+
+    "battery": {
+        "interval": 60,
+        "full-at": 95,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% 󰂄",
+        "format-plugged": "{capacity}% ",
+        "format-icons": ["󱃍", "󱃍", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰁹"],
+        "tooltip-format": "{capacity}%\n{timeTo}\n{power} W"
+    },
+
+    // ---
+
+    "tray": {
+        "icon-size": 15,
+        "spacing": 10
+    },
+
+    // ---
+
+    "custom/dunst": {
+        "exec": "~/.config/waybar/scripts/dunst.sh",
+        "return-type": "json",
+        "on-click": "dunstctl set-paused toggle",
+    },
+   
+    "custom/lock": {
+        "tooltip": false,
+        "on-click": "swaylock",
+        "format": "",
+    },
+
+    "custom/power": {
+        "tooltip": false,
+        "on-click": "~/.config/rofi/scripts/power.sh",
+        "format": "⏻"
+    }
+}

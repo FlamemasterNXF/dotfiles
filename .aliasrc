@@ -1,0 +1,2 @@
+alias hyprlaunch='~/.local/bin/hyprlaunch.sh'
+alias vim=nvim

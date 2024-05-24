@@ -1,0 +1,151 @@
+@import "mocha.css";
+
+/* --- GENERAL --- */
+* {
+  font-family: JetBrains Mono Nerd Font;
+  font-size: 13px;
+  min-height: 0;
+}
+
+#waybar {
+  background: transparent;
+  color: @text;
+}
+
+#window,
+#network,
+#pulseaudio,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#battery,
+#custom-updates,
+#custom-dunst,
+#tray,
+#custom-lock,
+#custom-power{
+  background-color: @base;
+  padding: 0.5rem 0.75rem;
+  margin: 5px 0;
+}
+
+/* --- LEFT MODULES --- */
+
+#workspaces {
+  border-radius: 1rem 0px 0px 1rem;
+
+  margin: 5px 0 5px 5px;
+  padding-left: 0.3rem;
+  background-color: @base;
+}
+
+#workspaces button {
+  color: @lavender;
+  background-color: transparent;
+  border-radius: 2rem;
+  padding: 0.25rem;
+  margin: 0.3rem 0;
+
+  transition: color 0.5s, background-color 0.5s;
+}
+
+#workspaces button.persistent {
+  color: @overlay0;
+}
+
+#workspaces button.special {
+  color: @rosewater;
+}
+
+#workspaces button.active {
+  color: @sky;
+  background-color: @surface0;
+}
+
+#workspaces button:hover {
+  color: @sapphire;
+  background-color: @surface1;
+}
+
+#window {
+  border-radius: 0px 1rem 1rem 0px;
+  background-color: @base;
+  margin-right: 0rem;
+}
+
+/* --- CENTER MODULES --- */
+
+#clock {
+  background-color: @base;
+  padding: 0.5rem 0.75rem;
+  margin: 5px 0;
+  border-radius: 1rem;
+  color: @blue;
+}
+
+/* --- RIGHT MODULES --- */
+
+#network {
+  color: @teal;
+  border-radius: 1rem 0px 0px 1rem;
+  margin-left: 1rem;
+}
+
+#pulseaudio {
+  color: @maroon;
+}
+
+#cpu {
+  color: @mauve;
+}
+
+#memory {
+  color: @peach;
+}
+
+#temperature {
+  color: @flamingo;
+}
+
+#backlight {
+  color: @yellow;
+}
+
+#battery {
+  margin-right: 1rem;
+  border-radius: 0px 1rem 1rem 0px;
+  color: @green;
+}
+
+#battery.charging {
+  color: @green;
+}
+
+#battery.warning:not(.charging) {
+  color: @red;
+}
+
+/*---*/
+
+#tray {
+  margin-right: 0.75rem;
+  border-radius: 1rem;
+}
+
+/* --- */
+
+#custom-dunst {
+  border-radius: 1rem 0px 0px 1rem;
+  color: @sapphire;
+}
+
+#custom-lock {
+  color: @lavender;
+}
+
+#custom-power {
+  margin: 5px 5px 5px 0;
+  border-radius: 0px 1rem 1rem 0px;
+  color: @red;
+}

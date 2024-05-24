@@ -1,0 +1,11 @@
+#Disable swayidle when somthing is fullscreen
+for_window [class=".*"] inhibit_idle fullscreen
+for_window [app_id=".*"] inhibit_idle fullscreen
+
+timeout 300 'swaylock -000000'
+timeout 320 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'
+before-sleep 'swaylock -000000'
+after-resume 'hyprctl dispatch dpms on'
+timeout 380 'systemctl suspend'
+lock 'swaylock -000000'
+unlock 'killall swaylock'

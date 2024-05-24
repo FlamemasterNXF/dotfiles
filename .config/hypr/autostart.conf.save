@@ -1,0 +1,13 @@
+# Old Backgrounds
+#exec-once=pacwall
+#exec-once=swaybg -i Downloads/starforest.png
+
+# Initalize swww
+#sexec-once=swww init
+#exec-once=swww img ~/wallpapers/starforest.png
+
+# Initalize Others
+exec-once=waybar
+exec-once=dunst
+exec-once=swayidle -w
+

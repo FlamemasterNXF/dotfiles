@@ -1,4 +1,5 @@
-@import "mocha.css";
+/* @import "mocha.css"; */
+@import "theme.css";
 
 /* --- GENERAL --- */
 * {
@@ -9,7 +10,7 @@
 
 #waybar {
   background: transparent;
-  color: @text;
+  color: @foreground;
 }
 
 #window,
@@ -25,7 +26,7 @@
 #tray,
 #custom-lock,
 #custom-power{
-  background-color: @base;
+  background-color: @background;
   padding: 0.5rem 0.75rem;
   margin: 5px 0;
 }
@@ -37,11 +38,11 @@
 
   margin: 5px 0 5px 5px;
   padding-left: 0.3rem;
-  background-color: @base;
+  background-color: @background;
 }
 
 #workspaces button {
-  color: @lavender;
+  color: @foreground;
   background-color: transparent;
   border-radius: 2rem;
   padding: 0.25rem;
@@ -51,33 +52,33 @@
 }
 
 #workspaces button.persistent {
-  color: @overlay0;
+  color: @foreground;
 }
 
 #workspaces button.special {
-  color: @rosewater;
+  color: @foreground;
 }
 
 #workspaces button.active {
-  color: @sky;
-  background-color: @surface0;
+  color: @color11;
+  background-color: @background;
 }
 
 #workspaces button:hover {
-  color: @sapphire;
-  background-color: @surface1;
+  color: @color5;
+  background-color: @background;
 }
 
 #window {
   border-radius: 0px 1rem 1rem 0px;
-  background-color: @base;
+  background-color: @background;
   margin-right: 0rem;
 }
 
 /* --- CENTER MODULES --- */
 
 #clock {
-  background-color: @base;
+  background-color: @background;
   padding: 0.5rem 0.75rem;
   margin: 5px 0;
   border-radius: 1rem;
@@ -87,43 +88,43 @@
 /* --- RIGHT MODULES --- */
 
 #network {
-  color: @teal;
+  color: @color15;
   border-radius: 1rem 0px 0px 1rem;
   margin-left: 1rem;
 }
 
 #pulseaudio {
-  color: @maroon;
+  color: @foreground;
 }
 
 #cpu {
-  color: @mauve;
+  color: @color14;
 }
 
 #memory {
-  color: @peach;
+  color: @foreground;
 }
 
 #temperature {
-  color: @flamingo;
+  color: @color8;
 }
 
 #backlight {
-  color: @yellow;
+  color: @foreground;
 }
 
 #battery {
   margin-right: 1rem;
   border-radius: 0px 1rem 1rem 0px;
-  color: @green;
+  color: @color7;
 }
 
 #battery.charging {
-  color: @green;
+  color: @color7;
 }
 
 #battery.warning:not(.charging) {
-  color: @red;
+  color: @color11;
 }
 
 /*---*/
@@ -137,15 +138,15 @@
 
 #custom-dunst {
   border-radius: 1rem 0px 0px 1rem;
-  color: @sapphire;
+  color: @color7;
 }
 
 #custom-lock {
-  color: @lavender;
+  color: @color5;
 }
 
 #custom-power {
   margin: 5px 5px 5px 0;
   border-radius: 0px 1rem 1rem 0px;
-  color: @red;
+  color: @color11;
 }

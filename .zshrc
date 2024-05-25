@@ -25,6 +25,7 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
+zinit light Aloxaf/fzf-tab
 
 # Load Completions
 autoload -U compinit && compinit
@@ -54,3 +55,8 @@ alias ls='ls --color'
 
 # Styling
 zstyle ':completion:*' list-colors "${LS_COLORS}"
+zstyle ':completion:*' menu no
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+
+# Integrations
+eval "$(fzf --zsh)"

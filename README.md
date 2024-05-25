@@ -11,3 +11,6 @@ To use these dotfiles on your local system, ensure you have [git](https://wiki.a
 1) Pull the library into your $HOME directory: `git clone https://github.com/FlamemasterNXF/dotfiles`
 2) Move into the `dotfiles` directory: `cd dotfiles/`
 3) Use `stow` to symlink the dotfiles to the locations your system expects: `stow .`
+
+## Important Notes
+1) This repo contains both my old bash configuration and my current zsh configuration. Both work fine, but zsh is far superior in my opinion.

@@ -17,7 +17,7 @@ image=~/.config/swaylock/background.png
 indicator
 indicator-radius=90
 indicator-thickness=10
-indicator-y-position=750
+indicator-y-position=540
 indicator-caps-lock
 
 key-hl-color=b4befe
@@ -33,7 +33,8 @@ inside-caps-lock-color=01010133
 inside-ver-color=01010133
 inside-wrong-color=01010133
 
-ring-color=313244
+#ring-color=313244
+ring-color=000000
 ring-clear-color=f9e2af
 ring-caps-lock-color=89b4fa
 ring-ver-color=cdd6f4

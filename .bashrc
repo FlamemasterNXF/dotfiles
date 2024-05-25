@@ -8,9 +8,8 @@
 # Base Aliases
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-
-# Load Custom Aliases 
-source ~/.aliasrc
+alias hyprlaunch='~/.local/bin/hyprlaunch.sh'
+alias vim=nvim
 
 # Old PS1
 # PS1='[\u@\h \W]\$'

@@ -5,6 +5,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# Set LS_COLORS
+export LS_COLORS="$(vivid generate catppuccin-mocha)"
+
 # Set Zinit directory
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
@@ -42,3 +45,12 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
+
+# Hotkeys
+bindkey '^a' autosuggest-accept
+
+# Aliases
+alias ls='ls --color'
+
+# Styling
+zstyle ':completion:*' list-colors "${LS_COLORS}"

@@ -27,8 +27,12 @@ zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 
+# Use Zsh Snippets
+zinit snippet OMZP::sudo # Press esc twice for easy sudo
+
 # Load Completions
 autoload -U compinit && compinit
+zinit cdreplay -q
 
 # Source the Prompt
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

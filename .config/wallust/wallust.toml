@@ -28,12 +28,6 @@ palette = "dark16"
 threshold = 10
 
 [templates]
-#cava.template = 'templates/colors-cava'
-#cava.target = '~/.config/cava/config'
-
-#hypr.template = 'templates/colors-hyprland.conf'
-#hypr.target = '~/.config/hypr/wallust/wallust-hyprland.conf'
-
 rofi.template = 'templates/rofi.rasi'
 rofi.target = '~/.config/rofi/theme.rasi'
 
@@ -42,15 +36,3 @@ waybar.target = '~/.config/waybar/theme.css'
 
 kitty.template = 'templates/kitty.conf'
 kitty.target = '~/.config/kitty/kitty.conf'
-
-#swaync.template = 'templates/colors-swaync.css'
-#swaync.target = '~/.config/swaync/wallust/colors-wallust.css'
-
-#macchina.template = 'templates/colors-macchina.toml'
-#macchina.target = '~/.config/macchina/themes/wallust.toml'
-
-#wezterm.template = 'templates/colors-wezterm.toml'
-#wezterm.target = '~/.config/wezterm/colors/wallust.toml'
-
-#zathura.template = 'templates/colors-zathura'
-#zathura.target = '~/.config/zathura/zathurarc'

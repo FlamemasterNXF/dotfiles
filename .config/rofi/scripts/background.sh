@@ -2,12 +2,15 @@
 
 cd ~/wallpapers
 
+# Run Rofi to Select a new Wallpaper
 chosen=$(ls | rofi -p "Wallpapers" -dmenu -selected-row 0)
 
-# Alternate Animation I Messed With
-# swww img -t grow  --transition-pos bottom  --transition-duration 1.2 --transition-fps=60 ~/wallpapers/$chosen
+# Swap the Wallpaper and Theme
+swww img ~/wallpapers/$chosen 
+wallust run ~/wallpapers/$chosen
 
-swww img ~/wallpapers/$chosen
-
+# Refresh Waybar
+killall -SIGUSR2 waybar > /dev/null
+ 
 # Regex Used to Hide File Extensions, removed for practical purposes 
 # | sed 's/\.[^.]*$//'

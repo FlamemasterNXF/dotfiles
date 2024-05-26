@@ -5,7 +5,7 @@ font=Jetbrains Mono Nerd Font
 clock
 timestr=%R
 
-image=~/.config/swaylock/background.png
+image=~/dotfiles/.config/rofi/.wallpaper
 
 #fade-in=0.2
 #grace=2

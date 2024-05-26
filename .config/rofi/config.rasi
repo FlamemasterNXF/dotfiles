@@ -57,6 +57,7 @@ mainbox {
     orientation:                 vertical;
     children:                    [ "inputbar", "listbox" ];
     background-color:            transparent;
+    // background-image:            url("~/.config/rofi/.wallpaper", width);
 }
 
 
@@ -69,7 +70,7 @@ inputbar {
     border-radius:               25px;
     orientation:                 horizontal;
     children:                    ["entry", "sep", "mode-switcher" ];
-    // background-image:            url("~/.config/rofi/.current_wallpaper", width);
+    background-image:            url("~/.config/rofi/.wallpaper", width);
 }
 
 // Entry input

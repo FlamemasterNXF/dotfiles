@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
 # Get and List  Wallpapers
 wallpapers=($(find "$HOME/wallpapers" -type f -iname \*.png))

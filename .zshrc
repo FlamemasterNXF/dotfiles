@@ -56,7 +56,7 @@ bindkey '^a' autosuggest-accept
 
 # Aliases
 alias ls='ls --color'
-alias hyprlaunch='~/.local/bin/hyprlaunch.sh'
+alias pclean='~/.local/bin/pacclean.sh'
 
 # Styling
 zstyle ':completion:*' list-colors "${LS_COLORS}"

@@ -3,7 +3,7 @@ Contains the dotfiles for my Arch Linux system, managed using [stow](https://www
 
 ## Usage
 
-### Prerequisite
+### Prerequisites
 To use these dotfiles on your local system, ensure you have [git](https://wiki.archlinux.org/title/git) and [GNU stow](https://archlinux.org/packages/extra/any/stow/) installed: `sudo pacman -S git stow` 
 
 ### Dotfiles Contained

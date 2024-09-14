@@ -14,3 +14,4 @@ To use these dotfiles on your local system, ensure you have [git](https://wiki.a
 
 ## Important Notes
 1) This repo contains both my old bash configuration and my current zsh configuration. Both work fine, but zsh is far superior in my opinion.
+2) The nvim config is very incomplete as of now.

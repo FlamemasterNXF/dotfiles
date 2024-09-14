@@ -31,4 +31,4 @@ wallust run "${wallpapers[$index]}"
 killall -SIGUSR2 waybar > /dev/null
 
 # Copy the Wallpaper to Rofi
-cp "${wallpapers[$index]}" ~/dotfiles/.config/rofi/.wallpaper
+cp "${wallpapers[$index]}" ~/.config/rofi/.wallpaper

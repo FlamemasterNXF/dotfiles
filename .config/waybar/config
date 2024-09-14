@@ -28,7 +28,7 @@
 
 
     // --- RIGHT MODULES ---
-    "modules-right": ["network", "cpu", "temperature","backlight", "battery", "tray", "custom/dunst", "custom/lock", "custom/power"],
+    "modules-right": ["network", "cpu", "temperature","backlight", "pulseaudio", "battery", "tray", "custom/dunst", "custom/lock", "custom/power"],
 
     "network": {
         "format-wifi": "{signalStrength}% ",
@@ -94,8 +94,9 @@
         "format-charging": "{capacity}% 󰂄",
         "format-plugged": "{capacity}% ",
         "format-icons": ["󱃍", "󱃍", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰁹"],
-        "tooltip-format": "{capacity}%\n{timeTo}\n{power} W"
-    },
+        "tooltip-format": "{capacity}%\n{timeTo}\n{power} W",
+        "on-click": "kitty sudo powertop"
+     },
 
     // ---
 

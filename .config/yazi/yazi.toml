@@ -1,2 +1,6 @@
-[manager]
+[mgr]
 show_hidden = true
+
+[opener]
+edit = [ { run = "/usr/bin/nano %s", block = true } ]
+open = [ { run = "xdg-open %s", desc = "Open" } ]

@@ -5,6 +5,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# Set EDITOR and VISUAL
+export EDITOR=nano
+export VISUAL=nano
+
 # Set LS_COLORS
 export LS_COLORS="$(vivid generate catppuccin-mocha)"
 

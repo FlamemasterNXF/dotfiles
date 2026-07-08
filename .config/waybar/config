@@ -28,7 +28,7 @@
 
 
     // --- RIGHT MODULES ---
-    "modules-right": ["network", "cpu", "temperature","backlight", "pulseaudio", "battery", "tray", "custom/dunst", "custom/lock", "custom/power"],
+    "modules-right": ["network", "cpu", "temperature", "custom/backlight", "wireplumber", "battery", "tray", "custom/dunst", "custom/lock", "custom/power"],
 
     "network": {
         "format-wifi": "{signalStrength}% ",
@@ -40,7 +40,7 @@
         "on-click": "nm-connection-editor"
     },
 
-    "pulseaudio": { // TODO: replace with wireplumber
+    "wireplumber": {
         "format":                 "{volume}% {icon} {format_source}",
         "format-bluetooth":       "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
@@ -78,9 +78,14 @@
         "on-click": "kitty htop"
     },
 
-    "backlight": {
-        "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    "custom/backlight": {
+	"exec": "~/.config/waybar/scripts/backlight.sh",
+    	"return-type": "json",
+    	"format": "{text} {icon}",
+    	"format-icons": ["", "", "", "", "", "", "", "", ""],
+    	"signal": 8,
+    	"interval": 5,
+    	"tooltip": true
     },
 
     "battery": {

@@ -24,7 +24,7 @@ for i in "${!wallpapers[@]}"; do
 done
 
 # Swap the Wallpaper and Theme
-swww img "${wallpapers[$index]}" 
+awww img "${wallpapers[$index]}" 
 wallust run "${wallpapers[$index]}"
 
 # Refresh Waybar

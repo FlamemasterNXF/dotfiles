@@ -1,10 +1,9 @@
 // Configuration
 
 configuration {
-    modi:                       "drun,run,filebrowser";
+    modi:                       "drun,filebrowser";
     show-icons:                 true;
     display-drun:               "Apps";
-    display-run:                "Run";
     display-filebrowser:        "Files";
     display-window:             "Windows";
     drun-display-format:        "{name}";
@@ -37,7 +36,6 @@ window {
     // Default
     enabled:                    true;
     fullscreen:                 false;
-    transparency:               "real";
     cursor:                     "default";
     spacing:                    0px;
     border:                     2px;
@@ -56,7 +54,6 @@ mainbox {
     enabled:                     true;
     orientation:                 vertical;
     children:                    [ "inputbar", "listbox" ];
-    background-color:            transparent;
     // background-image:            url("~/.config/rofi/.wallpaper", width);
 }
 
@@ -64,13 +61,12 @@ mainbox {
 // Inputbar
 inputbar {
     enabled:                     true;
-    padding:                     10px 10px 100px 10px;
+    padding:                     10px 10px 10px 10px;
     margin:                      10px;
     background-color:            transparent;
     border-radius:               25px;
     orientation:                 horizontal;
     children:                    ["entry", "sep", "mode-switcher" ];
-    background-image:            url("~/.config/rofi/.wallpaper", width);
 }
 
 // Entry input
@@ -140,8 +136,8 @@ button selected {
 // List Elements 
 element {
     enabled:                     true;
-    spacing:                     10px;
-    padding:                     10px;
+    //spacing:                     10px;
+    padding:                     2px;
     border-radius:               12px;
     background-color:            transparent;
     cursor:                      pointer;

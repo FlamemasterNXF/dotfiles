@@ -15,11 +15,11 @@
 
 #window,
 #network,
-#pulseaudio,
+#wireplumber,
 #cpu,
 #memory,
 #temperature,
-#backlight,
+#custom-backlight,
 #battery,
 #custom-updates,
 #custom-dunst,

@@ -1,0 +1,41 @@
+[window]
+opacity = 0.5
+
+[font]
+size = 11.0
+
+[font.normal]
+family = "JetBrains Nerd Mono"
+style = "Regular"
+
+[colors.primary]
+foreground = "#E1E4E8"
+background = "#00020A"
+
+[colors.cursor]
+text = "CellBackground"
+cursor = "#7F9EAD"
+
+[colors.selection]
+text = "#000000"
+background = "#F5FBFF"
+
+[colors.normal]
+black = "#000C12"
+red = "#0E3E51"
+green = "#154355"
+yellow = "#55463E"
+blue = "#476270"
+magenta = "#78808B"
+cyan = "#7F858F"
+white = "#CCD0D6"
+
+[colors.bright]
+black = "#8F9196"
+red = "#13536C"
+green = "#1C5971"
+yellow = "#715D52"
+blue = "#5E8295"
+magenta = "#A1ABB9"
+cyan = "#AAB1BE"
+white = "#CCD0D6"

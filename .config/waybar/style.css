@@ -82,7 +82,7 @@
   padding: 0.5rem 0.75rem;
   margin: 5px 0;
   border-radius: 1rem;
-  color: @blue;
+  color: @foreground;
 }
 
 /* --- RIGHT MODULES --- */
@@ -93,7 +93,7 @@
   margin-left: 1rem;
 }
 
-#pulseaudio {
+#wireplumber {
   color: @foreground;
 }
 
@@ -109,7 +109,7 @@
   color: @color8;
 }
 
-#backlight {
+#custom-backlight {
   color: @foreground;
 }
 

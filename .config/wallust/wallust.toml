@@ -28,11 +28,14 @@ palette = "dark16"
 threshold = 10
 
 [templates]
-rofi.template = 'templates/rofi.rasi'
+rofi.template = 'rofi.rasi'
 rofi.target = '~/.config/rofi/theme.rasi'
 
-waybar.template = 'templates/waybar.css'
+waybar.template = 'waybar.css'
 waybar.target = '~/.config/waybar/theme.css'
 
-kitty.template = 'templates/kitty.conf'
+kitty.template = 'kitty.conf'
 kitty.target = '~/.config/kitty/kitty.conf'
+
+swaylock.template = 'swaylock.conf'
+swaylock.target = '~/.config/swaylock/swaylock.conf'
